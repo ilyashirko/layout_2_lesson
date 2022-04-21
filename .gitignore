@@ -1,3 +1,4 @@
 env
 blog/__pycache__
 sensive_blog/__pycache__
+blog/migrations/__pycache__

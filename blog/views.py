@@ -33,6 +33,7 @@ def index(request):
         'most_popular_posts': [serialize_post(post) for post in popular_posts],
         'fresh_posts': [serialize_post(post) for post in fresh_posts],
     }
+    import json
     return render(request, 'index.html', context)
 
 

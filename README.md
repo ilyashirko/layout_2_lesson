@@ -7,11 +7,20 @@
 
 ## Запуск
 
-Для запуска блога у вас уже должен быть установлен Python 3.
-
-- Скачайте код
-- Установите зависимости командой `pip install -r requirements.txt`
-- Запустите сервер командой `python3 manage.py runserver`
+Для запуска блога у вас уже должен быть установлен Python 3.  
+Клонируйте репозиторий, установите зависимости, создайте БД и суперпользователя и запустите сервер.  
+``` 
+git clone https://github.com/ilyashirko/online_blog
+cd online_blog
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 manage.py runserver
+```
+Внесите посты в БД после авторизации в [админ-панели](http://127.0.0.1:8000/admin)
 
 После этого переходите по ссылке [127.0.0.1:8000](http://127.0.0.1:8000), вы увидите главную страницу.
 

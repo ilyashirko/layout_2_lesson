@@ -33,8 +33,6 @@ def index(request):
         'most_popular_posts': [serialize_post(post) for post in popular_posts],
         'fresh_posts': [serialize_post(post) for post in fresh_posts],
     }
-    print(list(context["fresh_posts"][0].keys()))
-    print(context["fresh_posts"][0]['slug'])
     return render(request, 'index.html', context)
 
 

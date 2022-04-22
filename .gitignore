@@ -4,3 +4,4 @@ sensive_blog/__pycache__
 blog/migrations/__pycache__
 *.pyc
 *.sqlite3
+media/

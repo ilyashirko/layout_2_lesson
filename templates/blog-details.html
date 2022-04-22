@@ -1,11 +1,11 @@
 {% extends 'blog-base.html' %}
 
 {% block title %}
-<title>{{post.title}} - Blog detailes</title>
+  <title>{{post.title}} - Blog detailes</title>
 {% endblock %}
 
 {% block content %} 
-{% load static %}
+  {% load static %}
   <!--================ Hero sm Banner start =================-->      
   <section class="mb-30px">
     <div class="container">
@@ -23,9 +23,6 @@
     </div>
   </section>
   <!--================ Hero sm Banner end =================-->    
-
-
-  
 
   <!--================ Start Blog Post Area =================-->
   <section class="blog-post-area section-margin">
@@ -61,8 +58,6 @@
              </div>
                </div>
               </div>
-          
-
                 <div class="comments-area">
                     <h4>03 Comments</h4>
                     <div class="comment-list">
@@ -142,5 +137,4 @@
     </div>
   </section>
   <!--================ End Blog Post Area =================-->
-
 {% endblock %}
